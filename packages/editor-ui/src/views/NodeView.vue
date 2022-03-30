@@ -34,6 +34,9 @@
 			</div>
 		</div>
 		<DataDisplay @valueChanged="valueChanged"/>
+		<div v-if="!createNodeActive" class="imenu" :title="$locale.baseText('nodeView.addNode')" @click="() => openNodeCreator('add_node_button')">
+			<img class="icon-menu" src="/navbar/menu.png">
+		</div>
 		<div v-if="!createNodeActive && !isReadOnly" class="node-creator-button" :title="$locale.baseText('nodeView.addNode')" @click="() => openNodeCreator('add_node_button')">
 			<n8n-icon-button size="xlarge" icon="plus" />
 		</div>
@@ -2831,10 +2834,17 @@ export default mixins(
 	bottom: 10px;
 }
 
-.node-creator-button {
+.imenu {
 	position: fixed;
 	text-align: center;
 	top: 80px;
+	right: 20px;
+}
+
+.node-creator-button {
+	position: fixed;
+	text-align: center;
+	bottom: 1.5rem;
 	right: 20px;
 }
 
