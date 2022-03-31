@@ -136,6 +136,11 @@
 					</n8n-menu-item>
 				</el-submenu>
 
+				<n8n-menu-item index="imenu">
+					<img src="/navbar/imenu.png"/>&nbsp;
+					<a href="https://aggr.insolence.tech/"><span slot="title" class="item-title-root">{{ $locale.baseText('charts') }}</span></a>
+				</n8n-menu-item>
+
 				<MenuItemsIterator :items="sidebarMenuBottomItems" :root="true"/>
 
 				<div :class="`footer-menu-items ${currentUser ? 'logged-in': ''}`">
