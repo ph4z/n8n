@@ -360,6 +360,7 @@
       "dist/nodes/Bannerbear/Bannerbear.node.js",
       "dist/nodes/Baserow/Baserow.node.js",
       "dist/nodes/Beeminder/Beeminder.node.js",
+      "dist/nodes/Binance/Binance.node.js",
       "dist/nodes/Bitbucket/BitbucketTrigger.node.js",
       "dist/nodes/Bitly/Bitly.node.js",
       "dist/nodes/Bitwarden/Bitwarden.node.js",
